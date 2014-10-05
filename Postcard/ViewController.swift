@@ -29,7 +29,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendCardButtonPressed(sender: UIButton) {
-         messageLabel.hidden=false
+        //code will evaluate when button is pressed 
+        messageLabel.hidden=false
          messageLabel.text = enterMessageTextField.text
          messageLabel.textColor = UIColor.redColor()
         
