@@ -38,7 +38,7 @@
                     <navigationItem key="navigationItem" title="Barcelona" id="Hqg-np-zTV">
                         <barButtonItem key="rightBarButtonItem" title=" Message" id="Qc9-q9-LuD">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="NFN-vG-CzT"/>
+                                <segue destination="BYZ-38-t0r" kind="show" id="l9b-wN-iac"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -83,7 +83,7 @@
                                 <size key="titleShadowOffset" width="27" height="0.0"/>
                                 <state key="normal" title="Send Card"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="179" width="252" height="32"/>
+                                    <rect key="frame" x="16" y="179" width="222" height="32"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendCardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SUJ-i4-Cdu"/>
@@ -98,10 +98,20 @@
                                     <rect key="frame" x="16" y="64" width="368" height="59"/>
                                 </variation>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rS5-q5-abC">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="131" width="222" height="21"/>
+                                </variation>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="p0C-Pj-Gfp">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="304" y="131" width="80" height="80"/>
+                                    <rect key="frame" x="285" y="131" width="99" height="80"/>
                                 </variation>
                             </imageView>
                         </subviews>
@@ -113,6 +123,7 @@
                                 <exclude reference="Wcf-Do-OEc"/>
                                 <exclude reference="hiW-ka-2tB"/>
                                 <exclude reference="HXe-Q8-CqV"/>
+                                <exclude reference="rS5-q5-abC"/>
                                 <exclude reference="p0C-Pj-Gfp"/>
                             </mask>
                         </variation>
@@ -122,6 +133,7 @@
                                 <include reference="Wcf-Do-OEc"/>
                                 <include reference="hiW-ka-2tB"/>
                                 <include reference="HXe-Q8-CqV"/>
+                                <include reference="rS5-q5-abC"/>
                                 <include reference="p0C-Pj-Gfp"/>
                             </mask>
                         </variation>
@@ -129,8 +141,9 @@
                     <connections>
                         <outlet property="enterMessageTextField" destination="Wcf-Do-OEc" id="7MT-fv-GjC"/>
                         <outlet property="enterNameTextField" destination="vGq-B7-KbQ" id="DQc-ra-xLO"/>
-                        <outlet property="mailButton" destination="hiW-ka-2tB" id="HSr-rB-Loe"/>
                         <outlet property="messageLabel" destination="HXe-Q8-CqV" id="1iw-4j-ETb"/>
+                        <outlet property="nameLabel" destination="rS5-q5-abC" id="GKL-j7-r0P"/>
+                        <outlet property="sendCardButton" destination="hiW-ka-2tB" id="Fm0-ei-jna"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
